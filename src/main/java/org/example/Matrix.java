@@ -15,12 +15,10 @@ public class Matrix {
     }
     public void add(Matrix other) {
         if (other == null) {
-            throw new NullPointerException("Other matrix must not be
-            null");
+            throw new NullPointerException("Other matrix must not be null");
         }
         if (other.size != this.size) {
-            throw new IllegalArgumentException("Matrices must have the same
-                    size");
+            throw new IllegalArgumentException("Matrices must have the same size");
         }
         for (int i = 0; i < size; i++) {
             for (int j = 0; j < size; j++) {
@@ -30,12 +28,10 @@ public class Matrix {
     }
     public void multiply(Matrix other) {
         if (other == null) {
-            throw new NullPointerException("Other matrix must not be
-            null");
+            throw new NullPointerException("Other matrix must not be null");
         }
         if (other.size != this.size) {
-            throw new IllegalArgumentException("Matrices must have the same
-                    size");
+            throw new IllegalArgumentException("Matrices must have the same size");
         }
         int[][] result = new int[size][size];
         for (int i = 0; i < size; i++) {
